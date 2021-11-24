@@ -3,9 +3,13 @@
   box-sizing:border-box;  
 }
 
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1{
   text-align: center;
-  size: 200%;
+  
 }
 
 p{
@@ -13,7 +17,10 @@ p{
 }
 
 nav{
+  display: flex;
+  justify-content: flex-end;
   margin-right: 10em;
+  
 }
 
 ul{
@@ -30,5 +37,54 @@ ul{
   height: 5em;
   margin: auto;
   padding: 10px;
-  background-color: blue;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 10em;
+}
+
+section{
+  display: flex;
+  overflow-x:auto;
+}
+
+video{
+  display: flex;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.sneakerblok{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+.productfoto{
+
+  margin-left: -40px;
+ 
+}
+
+.sneakerbloktekst{
+
+  margin-left: 1em;
+  text-align: left;
+}
+
+.image{
+  margin:auto;
+}
+
+.nieuwsartikeltekst{
+  color: aqua;
+  display: flex;
+}
+
+.productbox{
+  margin-left: 7em;
+  margin-right: 7em;
 }

@@ -53,7 +53,7 @@ hier de naam van de pagina
 
 
 
-## Breakdownschets (week 1)
+## Breakdownschets (week 1) - DONE
 
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
@@ -79,7 +79,10 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben begonnen aan het bouwen van de homepagina. Dit is de basis van mijn project, en ook een beginsel voor de 2e pagina. 
+Op het moment van schrijven ben ik alle standaard elementen in de pagina aan het zetten, en ze aan het stijlen en positioneren
+met css en flexbox. De opdrachten helpen hier goed bij, omdat je de code ook in actie ziet, en niet alleen maar op een slide waar
+het niet zoveel betekend. 
 
 
 ### Agenda voor meeting
