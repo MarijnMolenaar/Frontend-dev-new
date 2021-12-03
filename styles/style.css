@@ -13,12 +13,6 @@ h1{
   
 }
 
-p{
-  text-align: center;
-}
-
-
-
 ul{
   list-style: none;
   width: 30em;
@@ -35,9 +29,13 @@ input{
   padding: 10px;
   background-color: white;
   border-radius: 25px;
-  margin-top: 10em;
+  margin-top: 5em;
+  border: 3px solid grey;
 }
-
+input:hover{
+  border: 3px solid rgb(16, 223, 154);
+  transition: .3s;
+}
 section{
   display: flex;
   overflow-x:auto;
@@ -45,6 +43,13 @@ section{
 
 img{
   border-radius: 15px;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+img:hover {
+  border: 3px solid rgb(16, 223, 154);
+  transition: .3s;
 }
 
 video{
@@ -54,7 +59,13 @@ video{
 }
 
 strong{
-  margin-top: 10em;
+  margin-top: 1em;
+  width: 300px;
+ 
+}
+
+.kopjes{
+  margin-left: 1em;
 }
 
 .achtergrond{
@@ -62,7 +73,10 @@ strong{
   height: 500px;
 }
 
-.sneakerblok{
+/* Upcoming releases */
+
+li:nth-of-type(1) {
+  list-style: none;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -70,18 +84,84 @@ strong{
   margin-right: 20px;
   background-color: #F5F5F5;
   border-radius: 5px;
+
 }
 
-.productfoto{
+li:nth-of-type(2) {
+  list-style: none;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
 
-  margin-left: -40px;
+}
+
+li:nth-of-type(3) {
+  list-style: none;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+
+}
+
+li:nth-of-type(4) {
+  list-style: none;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+
+}
+
+li:nth-of-type(5) {
+  list-style: none;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+
+}
+
+/*sneakerstories*/
+li:nth-of-type(6){
  
+}
+
+.navigatieKnop{
+  border-bottom: 3px solid transparent;
+}
+
+
+
+
+.navigatieKnop:hover{
+  border-bottom: 3px solid rgb(16, 223, 154);
+  transition: 0.3s;
 }
 
 .navigatieBalk{
   width: 50px;
   justify-content: center;
 
+}
+
+.prijs{
+  color: rgb(16, 223, 154);
+  font-weight: bolder;
+  font-size: larger;
 }
 
 .sneakerbloktekst{
@@ -95,22 +175,98 @@ strong{
 
 }
 
-.nieuwsItems{
- display: flex;
- justify-content:space-around; 
- width: 90%;
- margin: auto;
- background-color: #F5F5F5;
- list-style: none;
+
+/* Het laatste nieuws */
+
+
+selection:nth-of-type(1) {
+  display: flex;
+  justify-content:space-around; 
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
 }
 
+selection:nth-of-type(2) {
+  display: flex;
+  justify-content:space-around; 
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+
+selection:nth-of-type(3) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+
+selection:nth-of-type(4) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+selection:nth-of-type(5) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+selector:nth-of-type(1) {
+  text-align: center;
+
+}
+
+
+
+
+
+
 .nieuwsBlok{
   display: block;
-  width: auto;
+  width: 400px;
   
 }
 
 ul{
-  width: 40%;
+  width: 40%; 
+}
+
+footer{
+  
+  padding: 2em;
+  padding-top: 4em;
+  color:grey;
+  background-color: black;
+  font-style: italic;
+
 }
