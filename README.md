@@ -164,28 +164,31 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+- Toetsenbord: Tab werkt nog niet op afbeeldingen/sneakerblokken, omdat deze elementen nog niet kilkbaar zijn d.m.v. een button of ander klikbaar element
+- Parkingson: Mijn website is enigsinds goed te gebruiken omdat de buttons groot zijn. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+- Zichtbeperking: De tekst en afbeeldingen zijn goed zichtbaar met zichtbeperkingen
 
+- Concentratieproblemen: De site is te gebruiken terwijl ik een ballon hooghoud
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+- Screenreader: De screenreader kan alle elementen op de pagina voorlezen, behalve de footer            
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### TAB toets werkt niet overal
+SOmmige delen van de site waren niet toegankelijk met de tab toets, omdat die items niet als detecteerbaar element waren gecodeerd, zoals een button of een link. Dit heb ik opgelost door deze elementen waar nodig binnen een <a></a> tag te zetten, zodat ze detecteerbaar werden.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### Motorische handicap 
+Ik heb de website getest met de schokband om, die de gevolgen van parkingson moeten simuleren. Uit deze test is gebleken dat de website nog goed te gebruiken is, omdat mijn site veel gebruikt maakt van grote, klikbare vlakken die makkelijk aangeklikt kunnen worden. 
+
+
+#### Zichtsbeperking
+Ik heb de website getest met een aantal zichtbeperkende brillen. Uit deze test is gebleken dat de tekst nog goed leesbaar is, omdat de tekst op een witte achtergrond staat die veel licht afgeeft.
+
+
+#### Screenreader
+Ik heb een screenreader door de website heen laten lezen. Alle klikbare elementen en tekst kan worden afgelezen, behalve die in de footer. Waar dit aan ligt wil ik nog uitzoeken. Het liefst zou ik wel willen dat dit afgelezen kan worden omdat mijn naam hierin staat en ook de bronvermelding van de afbeeldingen.
 
 </details>
 

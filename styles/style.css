@@ -2,10 +2,20 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
+/*ZO selecteer je spesifieke elementen in een parent (parent-element binnen parent) */
 
 html{
   font-family: Arial, Helvetica, sans-serif;
   background: "images/background.png";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1{
@@ -15,13 +25,13 @@ h1{
 
 ul{
   list-style: none;
-  width: 30em;
   display: flex;
   justify-content: space-between;
  
 }
 
 input{
+  width: 100%;
   display: flex;
   width: 50em;
   height: 5em;
@@ -68,16 +78,12 @@ strong{
   margin-left: 1em;
 }
 
-.achtergrond{
-  background-color: grey;
-  height: 500px;
-}
 
 /* Upcoming releases */
 
 li:nth-of-type(1) {
   list-style: none;
-  width: 300px;
+  width:300px;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -135,39 +141,68 @@ li:nth-of-type(5) {
 
 }
 
+
+
 /*sneakerstories*/
 li:nth-of-type(6){
- 
+  display: flex;
+  justify-content:space-around; 
+  width: 100px;
+  margin: auto;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
+
 
 .navigatieKnop{
   border-bottom: 3px solid transparent;
 }
 
+nav{
+  
+  right: 0;
+  width: 450px;
+}
+
+nav ul a li{
+  background-color: red;
+  width: 300px;
+}
 
 
 
-.navigatieKnop:hover{
+button{
+  border: none;
+  background-color: white;
+  border-bottom: 3px solid transparent;
+}
+
+/* met tab toets selecteren */
+button:focus{
+  background-color: rgb(16, 223, 154);
+}
+
+button:hover{
+  
   border-bottom: 3px solid rgb(16, 223, 154);
   transition: 0.3s;
 }
 
-.navigatieBalk{
-  width: 50px;
-  justify-content: center;
-
-}
-
-.prijs{
+li section{
   color: rgb(16, 223, 154);
   font-weight: bolder;
   font-size: larger;
+  flex-direction: column;
+  
 }
 
-.sneakerbloktekst{
+li p{
   
+  flex-direction: column;
   margin-left: 1em;
-  text-align: left;
 }
 
 .image{
@@ -176,40 +211,51 @@ li:nth-of-type(6){
 }
 
 
-/* Het laatste nieuws */
+/* SNeakerstories (de goede) */
+
+div{
+  width: 400px;
+  background-color: #F5F5F5;
+}
 
 
-selection:nth-of-type(1) {
+selection:nth-of-type(1){
   display: flex;
   justify-content:space-around; 
   width: 90%;
   margin: auto;
-  background-color: white;
+
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
-
 }
 
 selection:nth-of-type(2) {
   display: flex;
   justify-content:space-around; 
-  width: 90%;
-  margin: auto;
-  background-color: white;
+  width: 100%;
+  margin-left: -3em;
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
 
+
 }
 
+body selector{
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 selection:nth-of-type(3) {
   display: flex;
   justify-content:space-around; 
   width: 100%;
   margin-left: -3em;
-  background-color: white;
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -218,7 +264,7 @@ selection:nth-of-type(3) {
 
 
 selection:nth-of-type(4) {
-  display: flex;
+  display: flex;  
   justify-content:space-around; 
   width: 100%;
   margin-left: -3em;
@@ -239,23 +285,30 @@ selection:nth-of-type(5) {
   padding-top: 1em;
   padding-bottom: 1em;
 
+
 }
+
+selection:nth-of-type(6) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: white;
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  
+
+
+}
+
+
 
 selector:nth-of-type(1) {
   text-align: center;
 
 }
 
-
-
-
-
-
-.nieuwsBlok{
-  display: block;
-  width: 400px;
-  
-}
 
 ul{
   width: 40%; 
@@ -268,5 +321,56 @@ footer{
   color:grey;
   background-color: black;
   font-style: italic;
+
+}
+
+@media (max-width:500px){
+
+  input{
+    width: 100%;
+  }
+
+  selection:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  
+  }
+
+  selection:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  selection:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  selection:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  selection:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  selection li img{
+    width: 300px;
+   
+  }
+  selector selection{
+    margin-left: 7em;
+  }
+
+  div{
+    width: 300px;
+  }
 
 }
