@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="nl">
 <!--HEADER met metadata m.b.t. charset, viewport en stijlsheet-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Marijn Molenaar">
@@ -11,198 +12,197 @@
 </head>
 
 <body>
-    <!--Navigatiebalk-->
-    <nav>
-        <ul>
-            <a>
-                <button>Sneakers</button>
-            </a>
+    <main class="sneakersMain">
+        <!--Navigatiebalk-->
+        <button class="hamburger" id="hamburger">
+            Menu
+        </button>
+        <nav>
+            <ul class="navUl" id="navUl">
+                <li>
+                    <a href="#">Sneakers</a>
+                </li>
 
-            <a>
-                <button>Releases</button>
-            </a>
+                <li>
+                    <a href="#">Releases</a>
+                </li>
 
-            <a>
-                <button>Resell</button>
-            </a>
+                <li>
+                    <a href="#">Resell</a>
+                </li>
 
-            <a>
-                <button>Releases</button>
-            </a>
+                <li>
+                    <a href="#">Releases</a>
+                </li>
 
-            <a>
-                <button>Sale</button>
-            </a>
+                <li>
+                    <a href="#">Sale</a>
+                </li>
 
-            <a>
-                <button>News</button>
-            </a>
+                <li>
+                    <a href="#">News</a>
+                </li>
 
-            <a>
-                <button>Watch</button>
-            </a>
-        </ul>
-    </nav>
-    <!--Titel-->
-    <h1>Zoek alle sneakers</h1>
-    <selector>
-        <p>10K+ resultaten</p>
-    </selector>
-     <!--Inputveld met een aantal suggesties die relevant zijn voor de gebruiker-->
-    <form>
-        <input type="text" list="suggesties" placeholder="Zoek schoenen...">
-        <datalist id="suggesties">
-            <option>Nike</option>
-            <option>Adidas</option>
-            <option>Jeezy</option>
-            <option>Air Jordan</option>
-            <option>Vans</option>
-            <option>New Balance</option>
-        </datalist>
-    </form>
- <!--Rij 1-->
+                <li>
+                    <a href="#">Watch</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Titel-->
+        <h1>Zoek alle sneakers</h1>
+        <selector>
+            <p>10K+ resultaten</p>
+        </selector>
+        <!--Inputveld met een aantal suggesties die relevant zijn voor de gebruiker-->
+        <form>
+            <input type="text" list="suggesties" placeholder="Zoek schoenen...">
+            <datalist id="suggesties">
+                <option>Nike</option>
+                <option>Adidas</option>
+                <option>Jeezy</option>
+                <option>Air Jordan</option>
+                <option>Vans</option>
+                <option>New Balance</option>
+            </datalist>
+        </form>
+        <!--Rij 1-->
 
-<main></main>
-    <selector>
-        <li>
-            <img width="300" src="images/artikel2.jpg">
-            <strong>Black friday bij Footlocker</strong>
-            <p>1 minuut geleden</p>
-        </li>
+        <main>
+            <ul>
+                <li>
+                    <img width="300" src="images/artikel2.jpg">
+                    <strong>Black friday bij Footlocker</strong>
+                    <p>1 minuut geleden</p>
+                </li>
 
-        <li>
-            <img width="300" src="images/Patta-x-Nike-Air-Max-1-Black-The-Wave-2.png">
-            <strong>Nike Air Max 1 black</strong>
-            <p>1 uur geleden</p>
-        </li>
+                <li>
+                    <img width="300" src="images/Patta-x-Nike-Air-Max-1-Black-The-Wave-2.png">
+                    <strong>Nike Air Max 1 black</strong>
+                    <p>1 uur geleden</p>
+                </li>
 
-        <li>
-            <img width="300" src="images/NAKED-Copenhagen-x-New-Balance-Community-Pack.jpg">
-            <strong>New balance Dunk Low 'Goldenrod'</strong>
-            <p>2 uur geleden</p>
-        </li>
+                <li>
+                    <img width="300" src="images/NAKED-Copenhagen-x-New-Balance-Community-Pack.jpg">
+                    <strong>New balance Dunk Low 'Goldenrod'</strong>
+                    <p>2 uur geleden</p>
+                </li>
 
-        <li>
-            <img width="300" src="images/artikel3.jpg">
-            <strong>De Nike Dunk High ‘Moon Fossil’ <br>
-                heeft een releasedatum</strong>
-            <p>1 dag geleden</p>
-        </li>
-    </selector>
+                <li>
+                    <img width="300" src="images/artikel3.jpg">
+                    <strong>De Nike Dunk High ‘Moon Fossil’ <br>
+                        heeft een releasedatum</strong>
+                    <p>1 dag geleden</p>
+                </li>
+            </ul>
+            <!--Rij 2-->
+            <ul>
+                <li>
+                    <img width="300" src="images/artikel6.png">
+                    <strong>Adidas 10000 Krusty Burger</strong>
+                    <p>2 dagen geleden</p>
+                </li>
 
- <!--Rij 2-->
-    <selector>
-        <li>
-            <img width="300" src="images/artikel6.png">
-            <strong>Adidas 10000 Krusty Burger</strong>
-            <p>2 dagen geleden</p>
-        </li>
+                <li>
+                    <img width="300" src="images/adidas-Yeezy-BOOST-350-V2-Dazzling-Blue.jpg">
+                    <strong>adidas-Yeezy-BOOST-350-V2</strong>
+                    <p>2 dagen geleden</p>
+                </li>
+                <li>
+                    <img width="300" src="images/story8.png">
+                    <strong>Nike SB 'Orange'</strong>
+                    <p>2 dagen geleden</p>
 
-        <li>
-            <img width="300" src="images/adidas-Yeezy-BOOST-350-V2-Dazzling-Blue.jpg">
-            <strong>adidas-Yeezy-BOOST-350-V2</strong>
-            <p>2 dagen geleden</p>
-        </li>
-        <li>
-            <img width="300" src="images/story8.png">
-            <strong>Nike SB 'Orange'</strong>
-            <p>2 dagen geleden</p>
+                </li>
+                <li>
+                    <img width="300" src="images/yeezy700.PNG">
 
-        </li>
-        <li>
-            <img width="300" src="images/yeezy700.PNG">
+                    <strong>Nieuwe kleur Yeesy 700's uitgelekt</strong>
+                    <p>2 dagen geleden</p>
 
-            <strong>Nieuwe kleur Yeesy 700's uitgelekt</strong>
-            <p>2 dagen geleden</p>
+                </li>
+            </ul>
 
-        </li>
-    </selector>
+            <!--Rij 3-->
+            <ul>
+                <li>
+                    <img width="300" src="images/story1.png">
 
-     <!--Rij 3-->
-    <selector>
-        <li>
-            <img width="300" src="images/story1.png">
+                    <strong>Top 10 StockX sneakers</strong>
+                    <p>2 uur geleden</p>
 
-            <strong>Top 10 StockX sneakers</strong>
-            <p>2 uur geleden</p>
+                </li>
 
-        </li>
+                <li>
+                    <img width="300" src="images/story9.png">
 
-        <li>
-            <img width="300" src="images/story9.png">
+                    <strong>Schoenen die je vader vet zou vinden!</strong>
+                    <p>2 uur geleden</p>
 
-            <strong>Schoenen die je vader vet zou vinden!</strong>
-            <p>2 uur geleden</p>
+                </li>
 
-        </li>
+                <li>
+                    <img width="300" src="images/story4.jpg">
 
-        <li>
-            <img width="300" src="images/story4.jpg">
+                    <strong>North face 'Winterwalker'</strong>
+                    <p>2 uur geleden</p>
 
-            <strong>North face 'Winterwalker'</strong>
-            <p>2 uur geleden</p>
+                </li>
 
-        </li>
+                <li>
+                    <img width="300" src="images/artikel3.jpg">
 
-        <li>
-            <img width="300" src="images/artikel3.jpg">
+                    <strong>Nike Dunk High ‘Moon Fossil’ <br>
+                    </strong>
+                    <p>1 dag geleden</p>
 
-            <strong>Nike Dunk High ‘Moon Fossil’ <br>
-            </strong>
-            <p>1 dag geleden</p>
+                </li>
+            </ul>
 
-        </li>
-    </selector>
+            <!--Rij 4-->
+            <ul>
+                <li>
+                    <img width="300" src="images/artikel1.jpg">
 
-     <!--Rij 4-->
-    <selector>
-        <li>
-            <img width="300" src="images/artikel1.jpg">
+                    <strong>Air Jordan 1 high 'Comet'</strong>
+                    <p>1 uur geleden</p>
 
-            <strong>Air Jordan 1 high 'Comet'</strong>
-            <p>1 uur geleden</p>
+                </li>
 
-        </li>
+                <li>
 
-        <li>
+                    <img width="300" src="images/artikel4.png">
 
-            <img width="300" src="images/artikel4.png">
+                    <strong>Newsfeed
+                        END. showt de laatste Vans <br>Vault x mastermind WORLD capsule</strong>
+                    <p>2 dagen geleden</p>
 
-            <strong>Newsfeed
-                END. showt de laatste Vans <br>Vault x mastermind WORLD capsule</strong>
-            <p>2 dagen geleden</p>
+                </li>
+                <li>
+                    <img width="300" src="images/artikel5.jpg">
 
-        </li>
-        <li>
-            <img width="300" src="images/artikel5.jpg">
+                    <strong>De adidas ZX 8000 krijgt een <br>‘Strawberry Latte’ colorway</strong>
+                    <p>2 dagen geleden</p>
 
-            <strong>De adidas ZX 8000 krijgt een <br>‘Strawberry Latte’ colorway</strong>
-            <p>2 dagen geleden</p>
+                </li>
+                <li>
+                    <img width="300" src="images/artikel6.png">
 
-        </li>
-        <li>
-            <img width="300" src="images/artikel6.png">
+                    <strong>Adidas ZX 10.000 Krusty Burger</strong>
+                    <p>3 dagen geleden</p>
 
-            <strong>Adidas ZX 10.000 Krusty Burger</strong>
-            <p>3 dagen geleden</p>
-
-        </li>
-
-    </selector>
-</main>
-
-
-
+                </li>
+            </ul>
 
 
 
+        </main>
+        <footer>
+            <p>Gemaakt door Marijn Molenaar, met liefde <3 </p>
+                    <p>Website gebaseerd op de website van Sneakerjagers: https://www.sneakerjagers.com/ </p>
+                    <p>Afbeeldingen: https://www.sneakerjagers.com/ </p>
+        </footer>
+    </main>
     <script src="scripts/script.js"></script>
 </body>
-
-<footer>
-    <p>Gemaakt door Marijn Molenaar, met liefde <3 </p>
-            <p>Website gebaseerd op de website van Sneakerjagers: https://www.sneakerjagers.com/ </p>
-            <p>Afbeeldingen: https://www.sneakerjagers.com/ </p>
-
 
 </html>
