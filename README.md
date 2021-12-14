@@ -43,11 +43,11 @@ Ik vind het interessant om hier meer over te weten en hoe responsiveness in zijn
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/ss1.png" width="375px" alt="Homepagina van de site">
+<img src="images/ss1.PNG" width="375px" alt="Homepagina van de site">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/ss2.png" width="375px" alt="Sneaker-scroll pagina">
+<img src="images/ss2.PNG" width="375px" alt="Sneaker-scroll pagina">
  
 </details>
 
@@ -202,7 +202,7 @@ Ik heb een screenreader door de website heen laten lezen. Alle klikbare elemente
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De basis staat nu, alleen moet ik nog de HTML volgens de standaard indelen. Hiervoor kan ik de w3c validator gebruiken om te testen of alles correct staat. Ook kan ik nog wat onnodige css en HTML code weghalen. Dot optimaliseert mijn site en maakt het bestand kleiner. 
 
 
 ### Agenda voor meeting
