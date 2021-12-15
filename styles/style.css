@@ -1,6 +1,7 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+
 }
 /*ZO selecteer je spesifieke elementen in een parent (parent-element binnen parent) */
 
@@ -13,7 +14,7 @@ html{
 --main-color: rgb(16, 223, 154);
 --grey-color: #F5F5F5;
 --white-color: #ffffff;
-
+--black-color: #000000;
 }
 
 video{
@@ -25,17 +26,25 @@ h2{
   /*position: absolute;*/
   margin: 0;
   margin-bottom: 1em;
- 
 }
 
-p::first-line{
+main > p{
   text-align: center;
 }
 
-a {
+a{
   text-decoration: none;
   color: black;
   border: 3px solid transparent;
+}
+
+h3{
+  color: var(--main-color);
+  margin-left: 1em;
+}
+
+nav ul li a{
+  width: 80px;
 }
 
 nav ul li a:hover {
@@ -46,7 +55,6 @@ nav ul li a:hover {
 
 h1{
   text-align: center;
-  
 }
 
 ul{
@@ -54,7 +62,6 @@ ul{
   list-style: none;
   display: flex;
   justify-content: space-between;
- 
 }
 
 .hamburger{
@@ -81,6 +88,10 @@ input{
 input:hover{
   border: 3px solid var(--main-color);
   transition: .3s;
+}
+
+input:focus{
+  border-left: 3px solid var(--main-color);
 }
 
 div:nth-of-type(1){
@@ -221,14 +232,20 @@ button{
 }
 
 /* met tab toets selecteren */
-button:focus{
-  background-color: var(--main-color);
+
+a:focus{
+  border-left: 10px solid var(--main-color);
+  border-right: 10px solid var(--main-color);
 }
 
 button:hover{
-  
   border-bottom: 3px solid var(--main-color);
   transition: 0.3s;
+}
+
+button:focus{
+  border-left: 10px solid var(--main-color);
+  border-right: 10px solid var(--main-color);
 }
 
 img:hover{
@@ -280,8 +297,6 @@ selection:nth-of-type(2) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
-
-
 }
 
 selection:nth-of-type(3) {
@@ -303,7 +318,6 @@ selection:nth-of-type(4) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
-
 }
 
 selection:nth-of-type(5) {
@@ -314,8 +328,6 @@ selection:nth-of-type(5) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
-
-
 }
 
 selection:nth-of-type(6) {
@@ -327,22 +339,20 @@ selection:nth-of-type(6) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
-
 }
 
 ul{
   width: 100%; 
   list-style: none;
+  margin-left: -1em;
 }
 
 footer{
-  
   padding: 2em;
   padding-top: 4em;
   color:var(--grey-color);
-  background-color: black;
+  background-color: var(--black-color);
   font-style: italic;
-
 }
 
 .hamburger{
@@ -369,14 +379,14 @@ footer{
   input{
     width: 100%;
   }
+  
+  
 
 /* index.html */
   selection:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     margin: auto;
-
-  
   }
 
   selection:nth-of-type(2) {
@@ -413,7 +423,6 @@ footer{
 
   selection li img{
     width: 100%;
-   
   }
   selector selection{
     margin-left: 7em;
