@@ -1,22 +1,27 @@
 <!doctype html>
 <html lang="nl">
 <!--HEADER met metadata m.b.t. charset, viewport en stijlsheet-->
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Marijn Molenaar">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Marijn's website</title>
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+
+
 <body>
-	<main>
+	<header>
+
 		<!--Navigatiebalk-->
-	<button class="hamburger" id="hamburger">
-		Menu
-	</button>
+		<button class="hamburger" id="hamburger">
+			Menu
+		</button>
 		<nav>
-			<ul class="navUl" id="navUl">
+			<ul class="navUl" id="navUl" lang="en">
+				<img src="images/logo.JPG" width="100px" alt="Logo">
+				<input type="text" size="80" placeholder="Zoek schoenen...">
 				<li>
 					<a href="#">Sneakers</a>
 				</li>
@@ -40,267 +45,360 @@
 				</li>
 			</ul>
 		</nav>
+	</header>
+
+	<main>
 		<h1>Jouw sneakerzoekmachine</h1>
 		<p>Vind jouw nieuwe paar bij meer dan 150 sneakershops</p>
 		<!--Inputveld met aantal suggesties die relevant zijn voor de gebruiker
 	header main en footer toevoegen-->
-		<form>
-			<input type="text" list="suggesties" placeholder="Zoek schoenen...">
-			<datalist id="suggesties">
-				<option>Nike</option>
-				<option>Adidas</option>
-				<option>Jeezy</option>
-				<option>Air Jordan</option>
-				<option>Vans</option>
-				<option>New Balance</option>
-			</datalist>
-		</form>
+
+		<!--section 1-->
+		<section>
+			<form>
+				<input type="text" list="suggesties" placeholder="Zoek schoenen...">
+				<datalist id="suggesties">
+					<option>Nike</option>
+					<option>Adidas</option>
+					<option>Jeezy</option>
+					<option>Air Jordan</option>
+					<option>Vans</option>
+					<option>New Balance</option>
+				</datalist>
+			</form>
+		</section>
 		<!--Video met een aantal controls
 	video en form in sections binnen main
 	-->
-		<video controls>
-			<source src="images/black-friday.mp4" type="video/mp4">
-		</video>
-		<h2>Upcoming Releases</h2>
-		<strong>Houd de laatste sneaker releases op jouw radar</strong>
+
+		<!--section 2-->
+		<section>
+			<video controls>
+				<source src="images/black-friday.mp4" type="video/mp4">
+			</video>
+		</section>
+
+		<h2 lang="en">Upcoming Releases</h2>
+		<strong lang="nl">Houd de laatste sneaker releases op jouw radar</strong>
 		<!--Slideshow met aantal producten-->
-		<div>
-			<!--Product 1-->
-			<!--ul toevoegen
+		<!--Product 1-->
+		<!--ul toevoegen
 		li en a omwisselen
 		nth of type voor prijs
 		2e p = heading
 		-->
+
+		<!--section 3-->
+		<section lang="nl">
 			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/jeezy700.jpg" alt="Product afbeelding">
-						<h3>$259</h3>
+				<li>
+					<a href="#">
 						<h3>Yeezy boost 700</h3>
-						<p>2 aanbieders</p>
-					</li>
-				</a>
-			</ul>
-			<!--Product 2-->
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/airforce1.jpg" alt="Product afbeelding" >
-						<h3>$159</h3>
+					</a>
+					<img width="300" src="images/jeezy700.jpg" alt="Product afbeelding">
+					<p>$259</p>
+					<p>2 aanbieders</p>
+				</li>
+
+				<!--Product 2-->
+
+				<li>
+					<a href="#">
 						<h3>Nike Air Force 1</h3>
-						<p>20 aanbieders</p>
-					</li>
-				</a>
-			</ul>
-			<!--Product 3-->
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/225925(1).jpg" alt="Product afbeelding">
-						<h3>$199</h3>
+					</a>
+					<img width="300" src="images/airforce1.jpg" alt="Product afbeelding">
+					<p>$159</p>
+					<p>20 aanbieders</p>
+				</li>
+
+
+				<!--Product 3-->
+
+
+				<li>
+					<a href="#">
 						<h3>Nike SB 'Yellow Jacket'</h3>
-						<p>5 aanbieders</p>
-					</li>
-				</a>
-			</ul>
-			<!--Product4-->
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/Huarache.jpg" alt="Product afbeelding">
+					</a>
+					<img width="300" src="images/225925(1).jpg" alt="Product afbeelding">
+					<p>$199</p>
+					<p>5 aanbieders</p>
+				</li>
+
+
+				<!--Product4-->
+
+
+				<li>
+					<a href="#">
 						<h3>$179</h3>
-						<h3>Nike Huarache</h3>
-						<p>6 aanbieders</p>
-					</li>
-				</a>
-			</ul>
-			<!--Product 5-->
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/jordan_brown.jpg" alt="Product afbeelding">
+					</a>
+					<img width="300" src="images/Huarache.jpg" alt="Product afbeelding">
+					<p>Nike Huarache</p>
+					<p>6 aanbieders</p>
+
+				</li>
+
+
+				<!--Product 5-->
+
+
+				<li>
+					<a href="#">
 						<h3>$499</h3>
-						<h3>Jordan Air 1 Browm</h3>
-						<p>1 aanbieder</p>
-					</li>
-				</a>
+					</a>
+					<img width="300" src="images/jordan_brown.jpg" alt="Product afbeelding">
+					<p>Jordan Air 1 Browm</p>
+					<p>1 aanbieder</p>
+
+				</li>
+
 			</ul>
-		</div>
+		</section>
 		<!--Nieuwssectie-->
 		<h2> Het laatste nieuws</h2>
 		<strong>Houd het laatste nieuws bij in-en rondom de sneakerwereld</strong>
-		<selection>
+
+		<section lang="nl">
 			<!--RIj 1
 		section weg of vervangen
 		h2 en p binnen selection
 		-->
 			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/artikel1.jpg" alt="Product afbeelding">
-						<h3>
-							Nieuwe nike sneakers gelekt
-						</h3>
-						<p>1 uur geleden</p>
-					</li>
-				</a>
+				<li>
+					<a href="#">
+						<h3>Nieuwe nike sneakers gelekt</h3>
+					</a>
+					<img width="300" src="images/artikel1.jpg" alt="Product afbeelding">
+					<p>1 uur geleden</p>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<h3>Black friday bij Footlocker</h3>
+					</a>
+					<img width="300" src="images/artikel2.jpg" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+
+				<li>
+					<a href="#"></a>
+					<h3>
+						De Nike Dunk High ‘Moon Fossil’ <br>
+						heeft een releasedatum
+					</h3>
+					</a>
+					<img width="300" src="images/artikel3.jpg" alt="Product afbeelding">
+					<p>1 dag geleden</p>
+				</li>
+
 			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/artikel2.jpg" alt="Product afbeelding">
-						<h3>
-							Black friday bij Footlocker
-						</h3>
-						<p>2 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/artikel3.jpg" alt="Product afbeelding">
-						<h3>
-							De Nike Dunk High ‘Moon Fossil’ <br>
-							heeft een releasedatum
-						</h3>
-						<p>1 dag geleden</p>
-					</li>
-				</a>
-			</ul>
-		</selection>
-		<selection>
+		</section>
+		<section lang="nl">
 			<!--rij 2 -->
 			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/artikel4.png" alt="Product afbeelding">
+				<li>
+					<a href="#">
 						<h3>Newsfeed
-						showt de laatste Vans <br>Vault x mastermind WORLD capsule</h3>
-						<p>2 dagen geleden</p>
-					</li>
-				</a>
-			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/artikel5.jpg" alt="Product afbeelding">
+							showt de laatste Vans <br>Vault x mastermind WORLD capsule</h3>
+					</a>
+					<img width="300" src="images/artikel4.png" alt="Product afbeelding">
+					<p>2 dagen geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
 						<h3>De adidas ZX 8000 krijgt een <br>‘Strawberry Latte’ colorway</h3>
-						<p>2 dagen geleden</p>
-					</li>
-				</a>
-			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="300" src="images/artikel6.png" alt="Product afbeelding">
+					</a>
+					<img width="300" src="images/artikel5.jpg" alt="Product afbeelding">
+					<p>2 dagen geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
 						<h3>De adidas ZX 10.000 Krusty Burger<br>in restock</h3>
-						<p>3 dagen geleden</p>
-					</li>
-				</a>
+					</a>
+					<img width="300" src="images/artikel6.png" alt="Product afbeelding">
+					<p>3 dagen geleden</p>
+				</li>
+
 			</ul>
-		</selection>
+		</section>
 		<h2>Sneaker stories</h2>
 		<strong>Benieuwd naar alles wat rondom sneakers leeft? Lees een van onze verhalen!</strong>
 		<!--Sneakerstory sectie-->
 		<!--Rij 1
 	main >selection >  h2 > p
 	-->
-		<selection>
+		<section lang="nl">
 			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/story1.png" alt="Product afbeelding">
-						<h3>De Holiday Gift Guide van 100 Thieves bij StockX</h3>
-						<p>Door Lotte - 1 uur geleden</p>
-					</li>
-				</a>
+
+				<li>
+					<a href="#">
+						<h3>Black friday bij Footlocker</h3>
+					</a>
+					<img width="375" src="images/artikel2.jpg" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<h3>50% korting bij JacketStore!</h3>
+					</a>
+					<img width="375" src="images/artikel3.jpeg" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<h3>Black Friday bij Snipes!</h3>
+					</a>
+					<img width="375" src="images/artikel4.png" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
 			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/artikel2.jpg" alt="Product afbeelding">
-						<h3>Black Friday bij Footlocker</h3>
-						<p>Door Lotte - 1 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/artikel3.jpeg" alt="Product afbeelding">
-						<h3>Black Friday bij Snipes</h3>
-						<p>Door Eric - 2 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-		</selection>
+		</section>
 		<!--Rij 2-->
-		<selection>
+		<section lang="nl">
 			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/artikel4.png" alt="Product afbeelding">
-						<h3>Nieuwe collectie van Vans X Off-White</h3>
-						<p>Door Eric - 3 uur geleden</p>
-					</li>
-				</a>
+				<li>
+					<a href="#">
+						<h3>Top 10 StockX artikelen</h3>
+					</a>
+					<img width="375" src="images/story1.png" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<h3>Wat vinden wij de beste North Face winterjas?</h3>
+					</a>
+					<img width="375" src="images/story4.jpg" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<h3>Footshop korting overzicht</h3>
+					</a>
+					<img width="375" src="images/story5.jpg" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
 			</ul>
+		</section>
+
+		<section lang="nl">
 			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/jordan_dark.PNG" alt="Product afbeelding">
-						<h3>Sneakpeak van nieuwe Jordan 1's release</h3>
-						<p>Door Sem - 4 uur geleden</p>
-					</li>
-				</a>
+				<li>
+					<a href="#">
+						<h3>Nike SB 'Blue' heeft een releasedatum</h3>
+					</a>
+					<img width="375" src="images/story6.jpg" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<h3>De New Balance zomercollectie is perfect voor jouw vader!</h3>
+					</a>
+					<img width="375" src="images/story7.png" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<h3>Nike Low 'Orange' heeft een releasedatum</h3>
+					</a>
+					<img width="375" src="images/story8.png" alt="Product afbeelding">
+					<p>2 uur geleden</p>
+				</li>
 			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/NAKED-Copenhagen-x-New-Balance-Community-Pack.jpg" alt="Product afbeelding">
-						<h3>Bekijk hier de NAKED-Copenhagen X New Balance community keuze</h3>
-						<p>Door Lotte - 5 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-		</selection>
-		<selection>
-			<ul>
-				<a href="#">
-				
-					<li>
-						<img width="400" src="images/Nike-Dunk-Low-Barber-Shop.jpg" alt="Product afbeelding">
-						<h3>Nike-Dunk-Low-Barber-Shop review</h3>
-						<p>Door Lotte - 5 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/Patta-x-Nike-Air-Max-1-Black-The-Wave-2.png" alt="Product afbeelding">
-						<h3>Bekijk hier de nieuwste schoenen collectie van Patta</h3>
-						<p>Door Eric - 9 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-			<ul>
-				<a href="#">
-					<li>
-						<img width="400" src="images/story8.png" alt="Product afbeelding">
-						<h3>Nike SB 'Orange' review</h3>
-						<p>Door Sem - 9 uur geleden</p>
-					</li>
-				</a>
-			</ul>
-		</selection>
+		</section>
 	</main>
-	<footer>
-		<p>Gemaakt door Marijn Molenaar, met liefde </p>
-		<p>Website gebaseerd op de website van Sneakerjagers: https://www.sneakerjagers.com/ </p>
-		<p>Alle afbeeldingen komen van de website van sneakerjagers: https://www.sneakerjagers.com/ </p>
+	<footer lang="nl">
+		<img src="images/sneakerjagers_dark.png" width="100px" alt="Logo">
+		<section>
+			<ul>
+				<li>
+					<a href="#">
+						<P>Quick links</P>
+					</a>
+					<a href="#">
+						<P>Sneakers</P>
+					</a>
+					<a href="#">
+						<P>Releases</P>
+					</a>
+					<a href="#">
+						<P>News</P>
+					</a>
+					<a href="#">
+						<P>Watch</P>
+					</a>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<a href="#">
+						<P>Company</P>
+					</a>
+					<a href="#">
+						<P>Over ons</P>
+					</a>
+					<a href="#">
+						<P>Jobs</P>
+					</a>
+					<a href="#">
+						<P>Adverteren</P>
+					</a>
+					<a href="#">
+						<P>Bug report</P>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">
+						<P>Support</P>
+					</a>
+					<a href="#">
+						<P>Contact</P>
+					</a>
+					<a href="#">
+						<P>FAQ</P>
+					</a>
+					<a href="#">
+						<P>Advert 2021</P>
+					</a>
+					<a href="#">
+						<P>Advert 2022</P>
+					</a>
+				</li>
+			</ul>
+		</section>
+
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>
+
 </html>

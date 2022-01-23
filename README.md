@@ -250,6 +250,25 @@ Screenshots van je eindresultaat
 </details>
 
 
+## Herkansingsweek
+
+### Stand van zaken
+Naar aanleiding van het eindgesprek heb ik wat feedback ontvangen en deze verwerkt in mijn website. De feedback had vooral te maken met responsiveness, die ik nu verbetert heb. 
+Veranderingen die ik heb doorgevoerd:
+
+- Button en navigatie binnen header geplaatst
+- Logo toegevoegd
+- 2e header toegevoegd voor beide pagina's
+- Bovenste koppen veranderd naar H1
+- Advertentie binnen section geplaatst
+- Upcoming releases binnen section geplaatst
+- Laatste nieuws binnen section geplaatst
+- Zoekveld binnen section geplaatst
+- Andere content binnen footer geplaatst
+- 1 ul met meerdere li's voor artikel secties
+- Linkjes binnen li tags geplaatst
+- Order: -1 gebruikt om voor de artikelen de afbeelding boven de tekst te plaatsen
+
 
 
 

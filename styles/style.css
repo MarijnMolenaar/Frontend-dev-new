@@ -6,7 +6,7 @@
 /*ZO selecteer je spesifieke elementen in een parent (parent-element binnen parent) */
 
 html{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif, Trebuchet;
   background: "images/background.png";
 }
 
@@ -41,6 +41,7 @@ a{
 h3{
   color: var(--main-color);
   margin-left: 1em;
+
 }
 
 nav ul li a{
@@ -72,7 +73,7 @@ ul{
   cursor: pointer;
 }
 
-input{
+main section form input{
   width: 100%;
   display: flex;
   width: 50em;
@@ -85,6 +86,14 @@ input{
   border: 3px solid var(--grey-color);
 }
 
+body header nav ul input{
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
 input:hover{
   border: 3px solid var(--main-color);
   transition: .3s;
@@ -94,18 +103,16 @@ input:focus{
   border-left: 3px solid var(--main-color);
 }
 
-div:nth-of-type(1){
-  display: flex;
-  overflow-x:auto;
-  width: 100%;
- /* position: relative;*/
-}
 
 img{
   border-radius: 15px;
   position: relative;
   border: 3px solid transparent;
   
+}
+
+ul li img{
+  order: -1;
 }
 
 video{
@@ -115,7 +122,7 @@ video{
 }
 
 strong{
-  margin-top: 1em;
+  margin-top: 1em;    
   width: 300px;
  
 }
@@ -254,7 +261,7 @@ img:hover{
 }
 
 li section{
-
+  display: inline-block;
   font-weight: bolder;
   font-size: larger;
   flex-direction: column;
@@ -272,14 +279,27 @@ li p{
 
 }
 
+section{
+  display: flex;
+}
+
+
+
 div{
   width: 100%;
   background-color: var(--grey-color);
 }
 
 
-selection:nth-of-type(1){
+section:nth-of-type(1){
+justify-content: center;
+}
+/* video */
+
+
+section:nth-of-type(2){
   display: flex;
+  flex-direction: row;
   justify-content:space-around; 
   width: 90%;
   margin: auto;
@@ -287,9 +307,10 @@ selection:nth-of-type(1){
   padding-top: 1em;
   padding-bottom: 1em;
   background-color:var(--white-color);
-}
 
-selection:nth-of-type(2) {
+}
+/* nieuws 1e rij */
+section:nth-of-type(3) {
   display: flex;
   justify-content:space-around; 
   width: 90%;
@@ -297,9 +318,12 @@ selection:nth-of-type(2) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
+  overflow-x:auto;
+
 }
 
-selection:nth-of-type(3) {
+/* nieuws 1e rij */
+section:nth-of-type(4) {
   display: flex;
   justify-content:space-around; 
   width: 100%;
@@ -307,20 +331,12 @@ selection:nth-of-type(3) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-left: -3em;
 }
 
 
-selection:nth-of-type(4) {
-  display: flex;  
-  justify-content:space-around; 
-  width: 100%;
-  background-color: var(--white-color);
-  list-style: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-selection:nth-of-type(5) {
+/* nieuws 2e rij */
+section:nth-of-type(5) {
   display: flex;
   justify-content:space-around; 
   width: 100%;
@@ -328,9 +344,12 @@ selection:nth-of-type(5) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-left: -3em;
+
 }
 
-selection:nth-of-type(6) {
+/* sneakerstories 1e rij */
+section:nth-of-type(6) {
   display: flex;
   justify-content:space-around; 
   width: 100%;
@@ -339,15 +358,50 @@ selection:nth-of-type(6) {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
+
 }
+
+/* sneakerstories 2e rij */
+section:nth-of-type(7) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: var(--white-color);
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+/* sneakerstories 3e rij */
+section:nth-of-type(8) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: var(--white-color);
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+section:nth-of-type(9) {
+  border: 10px solid blue;
+
+}
+
+
 
 ul{
   width: 100%; 
   list-style: none;
-  margin-left: -1em;
+  display: flex;
+  width: 100%;
 }
 
 footer{
+
   padding: 2em;
   padding-top: 4em;
   color:var(--grey-color);
@@ -355,11 +409,53 @@ footer{
   font-style: italic;
 }
 
+footer ul{
+  width: 300px;
+  
+}
+
+footer section ul li a{
+  background-color: var(--black-color); 
+  color: var(--white-color);
+}
+
 .hamburger{
   display: none;
 }
 
-@media screen and (max-width:500px){
+@media (max-width:1200px){
+  main section form input{
+    width: 500px;
+  }
+
+  img{
+    width: 200px;
+  }
+
+  .sneakersMain ul {
+    width: 800px;
+    
+  }
+}
+
+@media (max-width:800px){
+  main section form input{
+    width: 500px;
+  }
+
+  img{
+    width: 200px;
+  }
+
+  .sneakersMain ul {
+    width: 500px;
+    
+  }
+
+
+}
+
+@media (max-width:500px){
 
   .hamburger{
     display: block;
@@ -373,58 +469,43 @@ footer{
 
   .navUl.show {
     display: flex;
-    background-color: var(--grey-color);
   }
 
-  input{
-    width: 100%;
+
+  
+  li{
+    display: inline-block;
+    flex-direction: column;
   }
   
-  
+  section{
+    margin: auto;
+  }
 
 /* index.html */
-  selection:nth-of-type(1) {
+/*
+  section:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     margin: auto;
   }
+*/
 
-  selection:nth-of-type(2) {
+  section ul{
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-left: 2em;
   }
 
-  selection:nth-of-type(3) {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-  selection:nth-of-type(4) {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-  selection:nth-of-type(5) {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-
-  /* sneakers.html */
   .sneakersMain ul {
     display: flex;
     flex-direction: column;
     margin: auto;
+    
   }
 
-  selection li img{
-    width: 100%;
-  }
-  selector selection{
+  section{
     margin-left: 7em;
   }
 
