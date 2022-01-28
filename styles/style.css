@@ -45,7 +45,9 @@ h3{
 }
 
 nav ul li a{
-  width: 80px;
+  padding: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 nav ul li a:hover {
@@ -200,8 +202,8 @@ li:nth-of-type(6){
   width: 300px;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   background-color: var(--white-color);
   border-radius: 5px;
 }
@@ -230,6 +232,7 @@ nav{
 
 nav ul a li{
   width: 300px;
+
 }
 
 button{
@@ -269,7 +272,7 @@ li section{
 }
 
 li p{
-  
+  margin-top: 1px;
   flex-direction: column;
   margin-left: 1em;
 }
@@ -284,20 +287,14 @@ section{
 }
 
 
-
-div{
-  width: 100%;
-  background-color: var(--grey-color);
-}
-
-
-section:nth-of-type(1){
+section:nth-of-type(3){
 justify-content: center;
+
 }
 /* video */
 
 
-section:nth-of-type(2){
+section:nth-of-type(1){
   display: flex;
   flex-direction: row;
   justify-content:space-around; 
@@ -306,11 +303,10 @@ section:nth-of-type(2){
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color:var(--white-color);
 
 }
-/* nieuws 1e rij */
-section:nth-of-type(3) {
+/* Schoenen slider */
+section:nth-of-type(2) {
   display: flex;
   justify-content:space-around; 
   width: 90%;
@@ -323,7 +319,7 @@ section:nth-of-type(3) {
 }
 
 /* nieuws 1e rij */
-section:nth-of-type(4) {
+section:nth-of-type(3) {
   display: flex;
   justify-content:space-around; 
   width: 100%;
@@ -332,11 +328,12 @@ section:nth-of-type(4) {
   padding-top: 1em;
   padding-bottom: 1em;
   margin-left: -3em;
+ 
 }
 
 
 /* nieuws 2e rij */
-section:nth-of-type(5) {
+section:nth-of-type(4) {
   display: flex;
   justify-content:space-around; 
   width: 100%;
@@ -349,6 +346,20 @@ section:nth-of-type(5) {
 }
 
 /* sneakerstories 1e rij */
+section:nth-of-type(5) {
+  display: flex;
+  justify-content:space-around; 
+  width: 100%;
+  margin-left: -3em;
+  background-color: var(--white-color);
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  
+}
+
+/* sneakerstories 2e rij */
 section:nth-of-type(6) {
   display: flex;
   justify-content:space-around; 
@@ -360,8 +371,7 @@ section:nth-of-type(6) {
   padding-bottom: 1em;
 
 }
-
-/* sneakerstories 2e rij */
+/* sneakerstories 3e rij */
 section:nth-of-type(7) {
   display: flex;
   justify-content:space-around; 
@@ -373,23 +383,8 @@ section:nth-of-type(7) {
   padding-bottom: 1em;
 
 }
-/* sneakerstories 3e rij */
-section:nth-of-type(8) {
-  display: flex;
-  justify-content:space-around; 
-  width: 100%;
-  margin-left: -3em;
-  background-color: var(--white-color);
-  list-style: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
 
-}
 
-section:nth-of-type(9) {
-  border: 10px solid blue;
-
-}
 
 
 
@@ -410,8 +405,12 @@ footer{
 }
 
 footer ul{
-  width: 300px;
-  
+  width: 200px;
+  display: flex;;
+}
+
+footer ul li{
+  display: block;
 }
 
 footer section ul li a{
@@ -421,6 +420,42 @@ footer section ul li a{
 
 .hamburger{
   display: none;
+}
+
+h4{
+  color: var(--main-color);
+}
+
+
+
+.heroImage {
+	background: url(https://static.sneakerjagers.com/news/nl/2022/01/Nike-Dunk-High-Year-of-the-Tiger.png);
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.heroContents {
+	padding-top: 25px;
+	text-align: center;
+  color: var(--white-color);
+}
+
+@media (max-width: 1400px){
+  .hamburger{
+    display: block;
+  }
+
+  .navUl{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navUl.show {
+    display: flex;
+  }
 }
 
 @media (max-width:1200px){
@@ -434,6 +469,18 @@ footer section ul li a{
 
   .sneakersMain ul {
     width: 800px;
+    
+  }
+
+
+
+ 
+  
+}
+
+@media (max-width:1000px){
+  .sneakersMain div{
+    overflow-x:auto;
     
   }
 }
@@ -452,44 +499,66 @@ footer section ul li a{
     
   }
 
+  section{
+    display: grid;
+  }
+
+  
+}
+
+@media (max-width:750px){
+ 
+  /* Schoenen slider */
+section:nth-of-type(2) {
+  overflow-x:auto;
 
 }
 
-@media (max-width:500px){
+/* nieuws 1e rij */
+section:nth-of-type(3) {
+  overflow-x:auto;
+}
 
-  .hamburger{
-    display: block;
-  }
 
-  .navUl{
-    display: none;
+/* nieuws 2e rij */
+section:nth-of-type(4) {
+  overflow-x:auto;
+}
+
+/* sneakerstories 1e rij */
+section:nth-of-type(5) {
+  overflow-x:auto;
+}
+
+/* sneakerstories 2e rij */
+section:nth-of-type(6) {
+  overflow-x:auto;
+}
+/* sneakerstories 3e rij */
+section:nth-of-type(7) {
+  overflow-x:auto;
+}
+
+section:nth-of-type(8) {
+  display: inline-block;
     flex-direction: column;
-    width: 100%;
-  }
+    margin-bottom: 5px;
+}
+ 
+}
 
-  .navUl.show {
-    display: flex;
-  }
-
-
+@media only screen and (max-width:500px){
   
   li{
     display: inline-block;
     flex-direction: column;
+    margin-bottom: 5px;
   }
   
   section{
     margin: auto;
+    width: 100%;
   }
-
-/* index.html */
-/*
-  section:nth-of-type(1) {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-*/
 
   section ul{
     display: flex;
@@ -509,8 +578,15 @@ footer section ul li a{
     margin-left: 7em;
   }
 
-  div{
-    width: 300px;
+  .sneakersMain div{
+    overflow-x:unset;
   }
 
+  footer ul li{
+    display: inline-block;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  
 }
